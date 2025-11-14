@@ -1,0 +1,289 @@
+
+/* Menu de navegación */
+header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    right: 0;
+    background: transparent;
+    padding: 20px 40px;
+}
+
+.menu ul{
+    list-style: none;
+    text-decoration: none;
+    display: flex;
+    gap: 1rem;;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+
+}
+.menu a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.3s;
+
+
+}
+
+.menu a:hover{
+    color: #ffffff;
+
+}
+
+
+/* ===== Tipografía y variables globales ===== */
+:root {
+    --color-base: #ffffff;
+    --color-light: #0e0b0b;
+    --color-accent: #6b5a3e;
+    /* dorado suave */
+    --font-heading: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-body: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-body);
+    color: var(--color-base);
+    line-height: 1.6;
+    background: rgb(0, 0, 0);
+    
+}
+
+/* Efectos de hover */
+.nav-left:hover,
+.nav-right:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+
+
+
+/* ===== Hero / Cabecera grande ===== */
+.header,
+.hero {
+    width: 100%;
+    height: 80vh;
+    background: url('./img/b25612b9-ec11-4e1a-bda1-f38c0e15d87e.png') center/cover no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero__content {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 2rem;
+}
+
+.hero__content h1 {
+    font-size: 3rem;
+    font-family: var(--font-heading);
+    margin-bottom: 1rem;
+}
+
+.hero__content p {
+    font-size: 1.2rem;
+}
+
+
+/* ===== Secciones ===== */
+.section {
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.alt-bg {
+    background: var(--color-light);
+}
+
+.section h2 {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-base);
+}
+
+.section p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    color: var(--color-base);
+}
+
+
+/* ===== Pie de página ===== */
+.site-footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--color-base);
+    color: rgb(0, 0, 0);
+}
+
+.site-footer p {
+    font-size: 0.9rem;
+}
+
+/* ---------My-projects---------- */
+#My-projects{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    padding: 40px;
+
+}
+
+.card{
+    background: #0d0d0d;
+    border: 1px solid #222;
+    padding-bottom: 30px;
+}
+
+.card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.card h3{
+    color: white;
+    font-size: 18px;
+    letter-spacing: 2px;
+    margin: 20px 20px 10px;
+    font-weight: 600;
+}
+.card p{
+    color: #bfbfbf;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 20px;
+    font-weight: 300;
+}
+
+
+
+
+/* ------skills--------- */
+.Skills_img{
+   width: 150px;
+   height: 150px; 
+
+
+}
+.skills_caption{
+    margin: auto;
+}
+
+.Skills_card{
+    display: flex;
+    flex-direction:column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 200px;
+    background-color: #353030;
+    padding: 1.5rem;
+    border-radius: 20px;
+
+}
+
+.skills_container-cards{
+    display: flex;
+    min-height: 80vh;
+    align-items: flex-start;
+    gap: 1rem;
+    justify-content: space-evenly;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+.title-skills{
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+/* ----------contact-------- */
+
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 80px 100px;
+    gap: 80px;
+    color: #fff;
+}
+
+.contact-text {
+    width: 30%; /* tal cual como tu imagen */
+}
+
+.p-title {
+    color: #ff3c3c;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-text h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    font-size: 15px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.locacion {
+    font-size: 16px;
+}
+
+/* FORMULARIO */
+.contact-form {
+    width: 60%;   
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    background: #111;
+    border: 1px solid #222;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 15px;
+    
+}
+
+.contact-form textarea {
+    height: 100px;
+    width: 100px;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #181818;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
