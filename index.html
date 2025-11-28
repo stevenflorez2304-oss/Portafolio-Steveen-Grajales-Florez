@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Steveen Florez</title>
+    <link rel="stylesheet" href="./src/css/Portafolio.css">
+</head>
+
+<body>
+    <header class="header">
+        <button id="menu_boton" class="boton" onclick="">
+
+        </button>
+        <nav id="menu" class="menu">
+            <ul class="menu_ul">
+                <li><a href="#about">Acerca de mí</a></li>
+                <li><a href="#mis-proyectos">Mis proyectos</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <!-- <li><a href="#topics of interest">Temas de interés</a></li> -->
+                <li><a href="#contact">Contacto</a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero"></section>
+        <div class="hero__content">
+            <h1>Steveen Flórez</h1>
+            <p class="hero_parrafo">“Tu tiempo es limitado, así que no lo desperdicies viviendo la vida de otro.”
+                Steve Jobs
+            </p>
+        </div>
+        </section>
+
+        <section id="about" class="about-section">
+
+            <div class="content-about">
+                <div class="about-content-text">
+                    <h2 class="about-title">Acerca de mí</h2>
+                    <p>
+                        Me llamo <strong>Steveen Grajales Florez</strong>, un joven apasionado por el mundo de la
+                        programación.
+                        Actualmente estudio una Tecnología en Desarrollo de Software en el SENA, con un firme deseo de
+                        aprender
+                        cada día y convertirme en un profesional capaz de participar en proyectos que impacten al mundo.
+                    </p>
+                    <p>
+                        Sueño con aportar a la historia mediante la innovación, el desarrollo y la creatividad en cada
+                        uno
+                        de
+                        mis trabajos.
+                    </p>
+                </div>
+                <div class="about-content-image">
+                    <img src="./src/img/steveenflorez.jpg" alt="Foto de Steveen Grajales Florez" class="about-image">
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= MIS PROYECTOS (3 tarjetas: CEA, Sahumerio, Portafolio) ================= -->
+        <section id="mis-proyectos" class="section">
+            <h2 class="section-title">Mis Proyectos</h2>
+
+            <div class="projects-container">
+
+                <!-- Proyecto 1 -->
+                <div class="project-card">
+                    <img src="./src/img/IMAGEN LOGO CEA IDONEOS.jpg" alt="CEA IDONEOS" class="project-img">
+                    <h3 class="project-name">CEA IDONEOS</h3>
+                    <p class="project-description">
+                        Academia de conducción: diseño de interfaz informativa y adaptativa para usuarios.
+                    </p>
+                </div>
+
+                <!-- Proyecto 2 (SAHUMERIO) -->
+                <div class="project-card">
+                    <img src="./src/img/Imagen de WhatsApp 2025-11-13 a las 17.44.23_acfda9d0.jpg" alt="Sahumerio Art"
+                        class="project-img">
+                    <h3 class="project-name">Sahumerio Art</h3>
+                    <p class="project-description">
+                        Tienda y catálogo digital para marca artesanal, con foco en usabilidad y estética.
+                    </p>
+                </div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-card">
+                    <img src="./src/img/proyecto3.jpg" alt="Mi Portafolio" class="project-img">
+                    <h3 class="project-name">Mi Portafolio</h3>
+                    <p class="project-description">
+                        Portafolio web personal que muestra habilidades, proyectos y contacto profesional.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+        <section id="skills" class="section skills">
+            <h2 class="title-skills">Habilidades</h2>
+
+            <div class="skills-container-cards">
+                <figure class="skills-card">
+                    <img class="skills-img" src="./src/img/html5.svg" alt="HTML">
+                    <figcaption class="skills-caption">HTML</figcaption>
+                    <div class="barra">
+                        <div class="progreso_html" style="width: 70%;">70%</div>
+                    </div>
+                </figure>
+
+                <figure class="skills-card">
+                    <img class="skills-img" src="./src/img/javascript.svg" alt="JS">
+                    <figcaption class="skills-caption">JS</figcaption>
+                    <div class="barra">
+                        <div class="progreso" style="width: 40%;">40%</div>
+                    </div>
+                </figure>
+
+                <figure class="skills-card">
+                    <img class="skills-img" src="./src/img/css_old.svg" alt="CSS">
+                    <figcaption class="skills-caption">CSS</figcaption>
+                    <div class="barra">
+                        <div class="progreso" style="width: 60%;">60%</div>
+                    </div>
+                </figure>
+
+                <figure class="skills-card">
+                    <img class="skills-img" src="./src/img/python.svg" alt="PYTHON">
+                    <figcaption class="skills-caption">PYTHON</figcaption>
+                    <div class="barra">
+                        <div class="progreso" style="width: 50%;">50%</div>
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        </section>
+        <section id="contact" class="section contact">
+            <div class="contact-text">
+                <h2 class="contact-title">Contacto</h2>
+                <p class="descripcion">
+                    ¿Tienes alguna pregunta o proyecto en mente? No dudes en ponerte en contacto conmigo.
+                </p>
+
+                <p class="locacion"><strong>Ubicación:</strong> Medellín, Colombia</p>
+            </div>
+
+            <form class="contacto-form" action="https://formsubmit.co/stevenflorez2304@gmail.com" method="POST">
+
+                <!-- Evita spam -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Redirección después de enviar -->
+                <input type="hidden" name="_next" value="https://tusitio.com/gracias.html">
+
+                <input type="text" name="nombre" placeholder="Nombre" required>
+                <input type="email" name="correo" placeholder="Correo Electrónico" required>
+                <textarea name="mensaje" placeholder="Mensaje" required style="width: 100%"></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2025 - Mi sitio Steveen Grajales Florez. All rights reserved.</p>
+        <div class="footer-icons">
+            <a href="https://mail.google.com/stevenflorez2304@gmail.com target=" _blank">
+                <img src="./src/img/gmail (1).svg" alt="Gmail">
+            </a>
+            <a href="https://github.com/stevenflorez2304-oss" target="_blank">
+                <img src="./src/img/github_dark.svg" alt="GitHub">
+            </a>
+
+            <a href="https://wa.me/573137053041" target="_blank">
+                <img src="./src/img/whatsapp-icon.svg" alt="WhatsApp">
+            </a>
+
+        </div>
+    </footer>
+
+    </a>
+    </div>
+
+    </footer>
+    <script src="./src/js/menu.js"></script>
+</body>
+
+</html>
