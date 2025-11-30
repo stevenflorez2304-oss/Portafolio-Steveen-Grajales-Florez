@@ -66,7 +66,7 @@ body {
     text-align: center;
     /* background-color: rgba(0, 0, 0, 0.4); */
     padding: 2rem;
-    background-image: url("/proyect/src/img/pc2.jpg");
+    background-image: url("../img/pc2.jpg");
     min-width: 60vw;
     min-height: 100vh;
     background-size: cover;
